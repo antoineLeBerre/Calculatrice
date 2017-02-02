@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView resultat;
+    TextView resultat2;
     Button b0;
     Button b1;
     Button b2;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button bPoint;
     Button bClear;
     Button bEgale;
-    String operande:
+    String operande;
     String operande1;
     String operane2;
     String resultatEnCoursText;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         resultat = (TextView)findViewById(R.id.textCalc);
+        resultat2 = (TextView) findViewById(R.id.textCalc2);
         b0 = (Button)findViewById(R.id.button0);
         b1 = (Button)findViewById(R.id.button1);
         b2 = (Button)findViewById(R.id.button2);
@@ -90,107 +92,107 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button0 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = operande;
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = operande;
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b0.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b0.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button1 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b1.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b1.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours = resultatEnCours + b1.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = resultatEnCours + b1.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button2 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b2.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b2.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b2.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b2.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button3 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b3.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b3.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b3.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b3.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button4 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b4.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b4.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b4.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b4.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button5 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b5.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b5.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b5.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b5.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button6 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b6.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b6.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b6.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b6.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button7 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCours = b7.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText = b7.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b7.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b7.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button8 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b8.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
-                    resultatEnCours += b8.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultatEnCoursText += b8.getText().toString();
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.button9 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b9.getText().toString();
-                    resultat.setText(resultatEnCours);
+                    resultat.setText(resultatEnCoursText);
                 }
                 else {
                     resultatEnCoursText += b9.getText().toString();
@@ -199,13 +201,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonPlus :
                 if (operande1 == null){
-                    operande1 = resultatEnCoursText:
+                    operande1 = resultatEnCoursText;
+                    resultatEnCoursText += "+";
+                    resultat2.setText(resultatEnCoursText);
                     resultatEnCoursText = "0";
+                    resultat.setText(resultatEnCoursText);
+
                 }
                 else {
                     resultatEnCours = Integer.parseInt(resultatEnCoursText)
                             + Integer.parseInt(operande1);
-                    resultat.setText(resultatEnCours);
+                    operande1 = ""+resultatEnCours;
+
+                    resultatEnCoursText = ""+resultatEnCours+"+";
+                    resultat2.setText(resultatEnCoursText);
+                    resultatEnCoursText = "0";
+                    resultat.setText(resultatEnCoursText);
                 }
                 break;
             case R.id.buttonMoins :
