@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String operane2;
     String resultatEnCoursText;
     int resultatEnCours;
+    boolean premierErOperande = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -200,7 +201,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonPlus :
-                if (operande1 == null){
+                if (premierErOperande){
+                    premierErOperande = false;
                     operande1 = resultatEnCoursText;
                     resultatEnCoursText += "+";
                     resultat2.setText(resultatEnCoursText);
@@ -222,12 +224,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonMoins :
                 break;
             case R.id.buttonMultiplier :
+                if (premierErOperande){
+                    premierErOperande = false;
+                    operande1 = resultatEnCoursText;
+                    resultatEnCoursText += "x";
+                    resultat2.setText(resultatEnCoursText);
+                    resultatEnCoursText = "0";
+                    resultat.setText(resultatEnCoursText);
+
+                }
+                else {
+                    resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                            * Integer.parseInt(operande1);
+                    operande1 = ""+resultatEnCours;
+
+                    resultatEnCoursText = ""+resultatEnCours+"x";
+                    resultat2.setText(resultatEnCoursText);
+                    resultatEnCoursText = "0";
+                    resultat.setText(resultatEnCoursText);
+                }
                 break;
             case R.id.buttonDiviser :
                 break;
             case R.id.buttonPoint :
                 break;
             case R.id.buttonClear :
+                premierErOperande = true;
+                resultat.setText("0");
+                resultat2.setText("");
                 break;
             case R.id.buttonEgale :
                 break;
