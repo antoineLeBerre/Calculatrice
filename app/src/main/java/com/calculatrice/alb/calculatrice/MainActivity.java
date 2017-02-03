@@ -28,11 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button bPoint;
     Button bClear;
     Button bEgale;
-    String operande;
     String operande1;
     String signe = "";
     String resultatEnCoursText;
-    int resultatEnCours;
+    double resultatEnCours;
     boolean premierErOperande = true;
 
     @Override
@@ -92,11 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             * les boutons + - * / permettra de faire le calcul de 2 operandes, si on passe à une 2 ele ioeratuib fait a 1ere operation
             */
             case R.id.button0 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b0.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b0.getText().toString();
                 }
                 else {
@@ -105,11 +104,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button1 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b1.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b1.getText().toString();
                 }
                 else {
@@ -118,11 +117,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button2 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b2.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b2.getText().toString();
                 }
                 else {
@@ -131,11 +130,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button3 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b3.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b3.getText().toString();
                 }
                 else {
@@ -144,11 +143,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button4 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b4.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b4.getText().toString();
                 }
                 else {
@@ -157,11 +156,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button5 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b5.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b5.getText().toString();
                 }
                 else {
@@ -170,11 +169,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button6 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b6.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b6.getText().toString();
                 }
                 else {
@@ -183,11 +182,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button7 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b7.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b7.getText().toString();
                 }
                 else {
@@ -196,11 +195,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button8 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b8.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b8.getText().toString();
                 }
                 else {
@@ -209,11 +208,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button9 :
-                operande = resultat.getText().toString();
-                if (operande.equals("0")){
+                resultatEnCoursText = resultat.getText().toString();
+                if (resultatEnCoursText.equals("0")){
                     resultatEnCoursText = b9.getText().toString();
                 }
-                else if (operande.equals("-0")){
+                else if (resultatEnCoursText.equals("-0")){
                     resultatEnCoursText = "-"+b9.getText().toString();
                 }
                 else {
@@ -223,6 +222,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonPlus :
                 if (premierErOperande){
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     premierErOperande = false;
                     operande1 = resultatEnCoursText;
                     signe = "+";
@@ -233,11 +236,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 }
                 else {
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     switch (signe)
                     {
                         case "-":
-                            resultatEnCours = Integer.parseInt(operande1)
-                                                      - Integer.parseInt(resultatEnCoursText);
+                            resultatEnCours = Double.parseDouble(operande1)
+                                                      - Double.parseDouble(resultatEnCoursText);
                             break;
                         case "/":
                             if (resultatEnCoursText.equals("0"))
@@ -245,16 +252,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
                                 return;
                             }
-                            resultatEnCours = Integer.parseInt(operande1)
-                                                      / Integer.parseInt(resultatEnCoursText);
+                            resultatEnCours = Double.parseDouble(operande1)
+                                                      / Double.parseDouble(resultatEnCoursText);
                             break;
                         case "*":
-                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                      * Integer.parseInt(operande1);
+                            resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                      * Double.parseDouble(operande1);
                             break;
                         case "+" :
-                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                      + Integer.parseInt(operande1);
+                            resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                      + Double.parseDouble(operande1);
                             break;
                         default:
                             Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
@@ -275,6 +282,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     resultat.setText(resultatEnCoursText);
                 }
                 else {
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     if (premierErOperande){
                         premierErOperande = false;
                         operande1 = resultatEnCoursText;
@@ -286,11 +297,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     }
                     else {
+                        if (resultatEnCoursText.endsWith(".")){
+                            Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                            return;
+                        }
                         switch (signe)
                         {
                             case "+":
-                                resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                          + Integer.parseInt(operande1);
+                                resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                          + Double.parseDouble(operande1);
                                 break;
                             case "/":
                                 if (resultatEnCoursText.equals("0"))
@@ -298,16 +313,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
                                     return;
                                 }
-                                resultatEnCours = Integer.parseInt(operande1)
-                                                          / Integer.parseInt(resultatEnCoursText);
+                                resultatEnCours = Double.parseDouble(operande1)
+                                                          / Double.parseDouble(resultatEnCoursText);
                                 break;
                             case "*":
-                                resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                          * Integer.parseInt(operande1);
+                                resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                          * Double.parseDouble(operande1);
                                 break;
                             case "-" :
-                                resultatEnCours = Integer.parseInt(operande1)
-                                                          - Integer.parseInt(resultatEnCoursText);
+                                resultatEnCours = Double.parseDouble(operande1)
+                                                          - Double.parseDouble(resultatEnCoursText);
                                 break;
                             default:
                                 Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
@@ -325,6 +340,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonMultiplier :
                 if (premierErOperande){
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     premierErOperande = false;
                     operande1 = resultatEnCoursText;
                     resultatEnCoursText += "x";
@@ -334,15 +353,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 }
                 else {
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     switch (signe)
                     {
                         case "+":
-                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                      + Integer.parseInt(operande1);
+                            resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                      + Double.parseDouble(operande1);
                             break;
                         case "-":
-                            resultatEnCours = Integer.parseInt(operande1)
-                                                      - Integer.parseInt(resultatEnCoursText);
+                            resultatEnCours = Double.parseDouble(operande1)
+                                                      - Double.parseDouble(resultatEnCoursText);
                             break;
                         case "/":
                             if (resultatEnCoursText.equals("0"))
@@ -350,12 +373,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
                                 return;
                             }
-                            resultatEnCours = Integer.parseInt(operande1)
-                                                      / Integer.parseInt(resultatEnCoursText);
+                            resultatEnCours = Double.parseDouble(operande1)
+                                                      / Double.parseDouble(resultatEnCoursText);
                             break;
                         case "*" :
-                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                      * Integer.parseInt(operande1);
+                            resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                      * Double.parseDouble(operande1);
                             break;
                         default:
                             Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
@@ -372,6 +395,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.buttonDiviser :
                 if (premierErOperande){
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     premierErOperande = false;
                     operande1 = resultatEnCoursText;
                     signe = "/";
@@ -382,19 +409,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 }
                 else {
+                    if (resultatEnCoursText.endsWith(".")){
+                        Toast.makeText(this, "Veuillez mettre un chiffre", Toast.LENGTH_LONG).show();
+                        return;
+                    }
                     switch (signe)
                     {
                         case "+":
-                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                      + Integer.parseInt(operande1);
+                            resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                      + Double.parseDouble(operande1);
                             break;
                         case "-":
-                            resultatEnCours = Integer.parseInt(operande1)
-                                                      - Integer.parseInt(resultatEnCoursText);
+                            resultatEnCours = Double.parseDouble(operande1)
+                                                      - Double.parseDouble(resultatEnCoursText);
                             break;
                         case "*":
-                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                      * Integer.parseInt(operande1);
+                            resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                      * Double.parseDouble(operande1);
                             break;
                         case "/" :
                             if (resultatEnCoursText.equals("0"))
@@ -402,8 +433,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
                                 return;
                             }
-                            resultatEnCours = Integer.parseInt(operande1)
-                                                      / Integer.parseInt(resultatEnCoursText);
+                            resultatEnCours = Double.parseDouble(operande1)
+                                                      / Double.parseDouble(resultatEnCoursText);
                             break;
                         default:
                             Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
@@ -419,6 +450,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonPoint :
+                if (!resultatEnCoursText.contains(".")){
+                    resultatEnCoursText = resultat.getText().toString();
+                    if (resultatEnCoursText.equals("0")){
+                        resultatEnCoursText += bPoint.getText().toString();;
+                    }
+                    else if (resultatEnCoursText.equals("-0")){
+                        resultatEnCoursText += bPoint.getText().toString();;
+                    }
+                    else {
+                        resultatEnCoursText += bPoint.getText().toString();
+                    }
+                    resultat.setText(resultatEnCoursText);
+                }
+                else {
+                    Toast.makeText(this, "Veuillez mettre 1 seul point", Toast.LENGTH_LONG).show();
+                    return;
+                }
                 break;
             case R.id.buttonClear :
                 premierErOperande = true;
@@ -429,12 +477,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 switch (signe)
                 {
                     case "+":
-                        resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                  + Integer.parseInt(operande1);
+                        resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                  + Double.parseDouble(operande1);
                         break;
                     case "-":
-                        resultatEnCours = Integer.parseInt(operande1)
-                                                  - Integer.parseInt(resultatEnCoursText);
+                        resultatEnCours = Double.parseDouble(operande1)
+                                                  - Double.parseDouble(resultatEnCoursText);
                         break;
                     case "/":
                         if (resultatEnCoursText.equals("0"))
@@ -442,12 +490,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
                             return;
                         }
-                        resultatEnCours = Integer.parseInt(operande1)
-                                                  / Integer.parseInt(resultatEnCoursText);
+                        resultatEnCours = Double.parseDouble(operande1)
+                                                  / Double.parseDouble(resultatEnCoursText);
                         break;
                     case "*" :
-                        resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                                                  * Integer.parseInt(operande1);
+                        resultatEnCours = Double.parseDouble(resultatEnCoursText)
+                                                  * Double.parseDouble(operande1);
                         break;
                     default:
                         Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
