@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button bEgale;
     String operande;
     String operande1;
-    String operane2;
+    String signe = "";
     String resultatEnCoursText;
     int resultatEnCours;
     boolean premierErOperande = true;
@@ -93,126 +94,173 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button0 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
-                    resultatEnCoursText = operande;
-                    resultat.setText(resultatEnCoursText);
+                    resultatEnCoursText = b0.getText().toString();
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b0.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b0.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button1 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b1.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b1.getText().toString();
                 }
                 else {
-                    resultatEnCoursText = resultatEnCours + b1.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                    resultatEnCoursText += b1.getText().toString();
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button2 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b2.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b2.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b2.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button3 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b3.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b3.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b3.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button4 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b4.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b4.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b4.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button5 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b5.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b5.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b5.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button6 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b6.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b6.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b6.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button7 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b7.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b7.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b7.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button8 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b8.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b8.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b8.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.button9 :
                 operande = resultat.getText().toString();
                 if (operande.equals("0")){
                     resultatEnCoursText = b9.getText().toString();
-                    resultat.setText(resultatEnCoursText);
+                }
+                else if (operande.equals("-0")){
+                    resultatEnCoursText = "-"+b9.getText().toString();
                 }
                 else {
                     resultatEnCoursText += b9.getText().toString();
-                    resultat.setText(resultatEnCoursText);
                 }
+                resultat.setText(resultatEnCoursText);
                 break;
             case R.id.buttonPlus :
                 if (premierErOperande){
                     premierErOperande = false;
                     operande1 = resultatEnCoursText;
-                    resultatEnCoursText += "+";
+                    signe = "+";
+                    resultatEnCoursText += signe;
                     resultat2.setText(resultatEnCoursText);
                     resultatEnCoursText = "0";
                     resultat.setText(resultatEnCoursText);
 
                 }
                 else {
-                    resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                            + Integer.parseInt(operande1);
+                    switch (signe)
+                    {
+                        case "-":
+                            resultatEnCours = Integer.parseInt(operande1)
+                                                      - Integer.parseInt(resultatEnCoursText);
+                            break;
+                        case "/":
+                            if (resultatEnCoursText.equals("0"))
+                            {
+                                Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
+                                return;
+                            }
+                            resultatEnCours = Integer.parseInt(operande1)
+                                                      / Integer.parseInt(resultatEnCoursText);
+                            break;
+                        case "*":
+                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                      * Integer.parseInt(operande1);
+                            break;
+                        case "+" :
+                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                      + Integer.parseInt(operande1);
+                            break;
+                        default:
+                            Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
+                            return;
+                    }
+                    signe = "+";
                     operande1 = ""+resultatEnCours;
 
                     resultatEnCoursText = ""+resultatEnCours+"+";
@@ -222,6 +270,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonMoins :
+                if (resultat.getText().toString().equals("0")){
+                    resultatEnCoursText = "-0";
+                    resultat.setText(resultatEnCoursText);
+                }
+                else {
+                    if (premierErOperande){
+                        premierErOperande = false;
+                        operande1 = resultatEnCoursText;
+                        signe = "-";
+                        resultatEnCoursText += signe;
+                        resultat2.setText(resultatEnCoursText);
+                        resultatEnCoursText = "0";
+                        resultat.setText(resultatEnCoursText);
+
+                    }
+                    else {
+                        switch (signe)
+                        {
+                            case "+":
+                                resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                          + Integer.parseInt(operande1);
+                                break;
+                            case "/":
+                                if (resultatEnCoursText.equals("0"))
+                                {
+                                    Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
+                                    return;
+                                }
+                                resultatEnCours = Integer.parseInt(operande1)
+                                                          / Integer.parseInt(resultatEnCoursText);
+                                break;
+                            case "*":
+                                resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                          * Integer.parseInt(operande1);
+                                break;
+                            case "-" :
+                                resultatEnCours = Integer.parseInt(operande1)
+                                                          - Integer.parseInt(resultatEnCoursText);
+                                break;
+                            default:
+                                Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
+                                return;
+                        }
+
+                        signe = "-";
+                        operande1 = ""+resultatEnCours;
+                        resultatEnCoursText = ""+resultatEnCours+"-";
+                        resultat2.setText(resultatEnCoursText);
+                        resultatEnCoursText = "0";
+                        resultat.setText(resultatEnCoursText);
+                    }
+                }
                 break;
             case R.id.buttonMultiplier :
                 if (premierErOperande){
@@ -234,10 +334,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 }
                 else {
-                    resultatEnCours = Integer.parseInt(resultatEnCoursText)
-                            * Integer.parseInt(operande1);
-                    operande1 = ""+resultatEnCours;
+                    switch (signe)
+                    {
+                        case "+":
+                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                      + Integer.parseInt(operande1);
+                            break;
+                        case "-":
+                            resultatEnCours = Integer.parseInt(operande1)
+                                                      - Integer.parseInt(resultatEnCoursText);
+                            break;
+                        case "/":
+                            if (resultatEnCoursText.equals("0"))
+                            {
+                                Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
+                                return;
+                            }
+                            resultatEnCours = Integer.parseInt(operande1)
+                                                      / Integer.parseInt(resultatEnCoursText);
+                            break;
+                        case "*" :
+                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                      * Integer.parseInt(operande1);
+                            break;
+                        default:
+                            Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
+                            return;
+                    }
 
+                    signe = "*";
+                    operande1 = ""+resultatEnCours;
                     resultatEnCoursText = ""+resultatEnCours+"x";
                     resultat2.setText(resultatEnCoursText);
                     resultatEnCoursText = "0";
@@ -245,6 +371,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonDiviser :
+                if (premierErOperande){
+                    premierErOperande = false;
+                    operande1 = resultatEnCoursText;
+                    signe = "/";
+                    resultatEnCoursText += signe;
+                    resultat2.setText(resultatEnCoursText);
+                    resultatEnCoursText = "0";
+                    resultat.setText(resultatEnCoursText);
+
+                }
+                else {
+                    switch (signe)
+                    {
+                        case "+":
+                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                      + Integer.parseInt(operande1);
+                            break;
+                        case "-":
+                            resultatEnCours = Integer.parseInt(operande1)
+                                                      - Integer.parseInt(resultatEnCoursText);
+                            break;
+                        case "*":
+                            resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                      * Integer.parseInt(operande1);
+                            break;
+                        case "/" :
+                            if (resultatEnCoursText.equals("0"))
+                            {
+                                Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
+                                return;
+                            }
+                            resultatEnCours = Integer.parseInt(operande1)
+                                                      / Integer.parseInt(resultatEnCoursText);
+                            break;
+                        default:
+                            Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
+                            return;
+                    }
+
+                    signe = "/";
+                    operande1 = ""+resultatEnCours;
+                    resultatEnCoursText = ""+resultatEnCours+"/";
+                    resultat2.setText(resultatEnCoursText);
+                    resultatEnCoursText = "0";
+                    resultat.setText(resultatEnCoursText);
+                }
                 break;
             case R.id.buttonPoint :
                 break;
@@ -254,8 +426,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultat2.setText("");
                 break;
             case R.id.buttonEgale :
+                switch (signe)
+                {
+                    case "+":
+                        resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                  + Integer.parseInt(operande1);
+                        break;
+                    case "-":
+                        resultatEnCours = Integer.parseInt(operande1)
+                                                  - Integer.parseInt(resultatEnCoursText);
+                        break;
+                    case "/":
+                        if (resultatEnCoursText.equals("0"))
+                        {
+                            Toast.makeText(this, "Division par 0 impossible", Toast.LENGTH_LONG).show();
+                            return;
+                        }
+                        resultatEnCours = Integer.parseInt(operande1)
+                                                  / Integer.parseInt(resultatEnCoursText);
+                        break;
+                    case "*" :
+                        resultatEnCours = Integer.parseInt(resultatEnCoursText)
+                                                  * Integer.parseInt(operande1);
+                        break;
+                    default:
+                        Toast.makeText(this, "Veuillez entrer le 2eme operande", Toast.LENGTH_LONG).show();
+                        return;
+                }
+                resultatEnCoursText = ""+resultatEnCours;
+                resultat.setText("0");
+                resultat2.setText(resultatEnCoursText);
+                premierErOperande = true;
                 break;
         }
-
     }
 }
